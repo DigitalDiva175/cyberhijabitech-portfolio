@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background:url(cyberhijabiimages/cyber\ background\ 3.jpg) ;no-repeat center center fixed;
+background-size: cover;
+}
+/* Header& Navigation*/
+header{
+    background: #6A0DAD;/* Neon purple*/
+    padding: 15px;
+    position: fixed;
+    width:100% ;
+    top:0 ;
+    left: 0;
+    z-index:1000 ;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Navigation */
+header {
+    background: #004080;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #D63384;/* Electric Pink*/
+
+
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+#home {
+    text-align: center;
+    padding-top: 100px;
+    background: url('images/home-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+/*section Headers with Gradient*/
+h2{
+    text-align: center;
+    font-size:28px ;
+    background: linear-gradient(to right #6A0DAD,#D63384);/*Neon purple to Electric pink*/
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent ;
+
+}
+/*Individual section Backgrounds*/
+#about, #mission, #values, #services, #impact {
+    background: #3B82F6;/*Cyber Glow Blue*/
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    color:white ;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+/* Testimonials Section */
+.testimonial-container {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin:auto ;
+    padding: 20px 0;
+    position: relative;
+    
+}
+/*Testimonials slider*?(horizontal)*/
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+    transition:transform 0.5s ease-in-out;
+
+
+}
+.testimonial{
+  min-width: 300px;
+ max-width: 350px;
+ text-align: left;
+ background:white ;
+ padding:15px 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    flex-shrink:0;
+}
+
+/* Dots for Navigation*/
+.slider-dots{
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
+.dot{
+    width:10px ;
+    height: 10px;
+    margin:0 5px ;
+    background: gray;
+    border-radius:50% ;
+    display: inline-block;
+    cursor:pointer ;
+}
+.dot.active{
+    background: #6a0dad;/*Neon Purple*/
+}
+
+/* contact section style*/
+#contact {
+    background:rgb(0, 0, 0,0.8);/*Dark transparent Background*/
+    color:white ;
+    text-align: center;
+}
+
+#contact form{
+    max-width:400px ;
+    margin: auto;
+}
+#contact input,#contact textarea{
+    width: 100%;
+    padding:10px ;
+    margin: 10px,0;
+    border-radius: 5px;
+    border:none ;
+}
+
+#contact button {
+    background: #3B82F6;/* cyber Glow Blue*/
+    border:none ;
+    padding:10px ;
+    cursor: pointer;
+    font: size 16px;
+    border: radius 5px;
+    color:white ;
+}
+#contact button:hover{
+    background:#6A0DAD ;
+
+}
+/*Responsive Design*/
+@media(max-width:768px) {
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+.testimonial-slider{
+    width: 90%;
+}
